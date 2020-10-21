@@ -1526,6 +1526,12 @@ header .swiper-container .swiper-slide img {
   height: 500px;
 }
 
+@media (max-width: 1200px) {
+  #recent .recent-body {
+    height: 530px;
+  }
+}
+
 #best-seller {
   margin-top: -25px;
 }
@@ -1565,6 +1571,12 @@ header .swiper-container .swiper-slide img {
 
 #best-seller .best-seller-body {
   height: 500px;
+}
+
+@media (max-width: 1200px) {
+  #best-seller .best-seller-body {
+    height: 530px;
+  }
 }
 
 #banner2 {
