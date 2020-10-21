@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="overflow">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vendor/all.min.css">
+    <link rel="stylesheet" href="./css/vendor/linear.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./css/vendor/aos.css">
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>فيتا ستور</title>
+</head>
+
+<body>
+
+    <div class="pre-loader">
+        <div class="containe">
+            <div class="dots">
+                <div class="dot">
+                </div>
+                <div class="dot">
+                </div>
+                <div class="dot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-bottom">
+            <div class="container">
+                <div class="c2">
+                    <div class="top-settings nav-lang">
+                        <div class="top-setting">
+                            <span class="setting-anchor"><img src="./images/icons/ar.png" alt="ar"> العربية</span>
+                            <div class="top-dropDown">
+                                <a href="./index.html" class="drop-link fixall">العربية</a>
+                                <a href="./index-en.html" class="drop-link fixall">English</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="search-content">
+                            <form action="#">
+                                <input type="text" placeholder="عن ماذا تبحث؟">
+                                <button class="search-btn"><span class="lnr lnr-magnifier"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nav-icons-sm">
+                        <div class="menu" id="nava-icon">
+                            <span class="lnr lnr-menu"></span>
+                        </div>
+                        <div class="search-btn" id="search-btn">
+                            <span class="lnr lnr-magnifier"></span>
+                        </div>
+                    </div>
+                    <div class="nav-logo"><a href="#"><img src="./images/logo.png" alt=".."></a></div>
+                    <div class="nav-icons">
+                        <div class="user">
+                            <div class="user-btns">
+                                <a href="#">تسجيل</a>/ <a href="#">تسجيل الدخول</a>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart-btn" id="cart-btn">
+                                <span class="count">0</span>
+                                <span class="lnr lnr-cart"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nava-container">
+            <div class="container">
+                <div class="nava" id="nava">
+                    <div class="nava-content">
+                        <div class="nava-head">
+                            <div class="top-settings">
+                                <div class="top-setting nav-lang">
+                                    <span class="setting-anchor">العربية</span>
+                                    <div class="top-dropDown">
+                                        <a href="index.html" class="drop-link fixall">العربية</a>
+                                        <a href="index-en.html" class="drop-link fixall">English</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nava-close" id="close-nava">
+                                <span class="lnr lnr-cross"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li> <a href="#"> الرئيسية</a></li>
+                            <li class="slide sm-link">
+                                <div class="drop"> حسابى <span class="lnr lnr-chevron-down"></span> </div>
+                                <ul>
+                                    <li><a href="#">تسجيل الدخول</a></li>
+                                    <li><a href="#">تسجيل جديد</a></li>
+                                </ul>
+                            </li>
+                            <li class="sm-slide slide top-setting">
+                                <div class="drop"> الرضع <span class="lnr lnr-chevron-down"></span> </div>
+                                <ul class="top-dropDown">
+                                    <li class="drop-link fixall"><a href="#">ملابس</a></li>
+                                    <li class="drop-link fixall"><a href="#">أساسيات</a></li>
+                                    <li class="drop-link fixall"><a href="#">مهاد</a></li>
+                                    <li class="drop-link fixall"><a href="#">إكسسوارات</a></li>
+                                    <li class="drop-link fixall"><a href="#">لهايات ومشابك</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#">الأولاد</a></li>
+                            <li> <a href="#">البنات </a></li>
+                            <li> <a href="#"> الإكسسوارات</a></li>
+                            <li> <a href="#"> الألعاب</a></li>
+                            <li> <a href="#"> الهدايا</a></li>
+                            <li> <a href="#"> الديكور</a></li>
+                            <li> <a href="#"> الماركات</a></li>
+                            <li> <a href="#"> وصل حديثًا</a></li>
+                            <li> <a href="#"> العروض المميزة</a></li>
+                            <li> <a href="#"> هل تحتاج مساعدة؟</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+        <div class="close-search" id="close-search"><span class="lnr lnr-cross"></span></div>
+        <div class="search">
+            <form action="#">
+                <input type="text" id="search-input" placeholder="البحث.." autocomplete="false">
+                <button class="searching"><span class="lnr lnr-magnifier"></span></button></form>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/header/header.jpg" alt="slide1 banner"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/header/header.jpg" alt="slide1 banner"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/header/header.jpg" alt="slide1 banner"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/header/header.jpg" alt="slide1 banner"></a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div id="follow">
+        <div class="container">
+            <div class="c2">
+                <div class="follow-content">
+                    <a href="#">
+                        <h3>تابعونا على انستقرام vitastore@  </h3>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banners">
+        <div class="container">
+            <div class="c2">
+                <div class="s-head">
+                    <h3>
+                        التصنيفات
+                    </h3>
+                </div>
+                <div class="banners-content">
+                    <div class="banner" data-aos="fade-up" data-aos-delay="0"><a href="#"><img
+                                src="./images/banners/1.jpg" alt=".."> <h3>الرضع</h3></a></div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="300"><a href="#"><img
+                                src="./images/banners/2.jpg" alt=".."> <h3>الاولاد</h3></a></div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="600"><a href="#"><img
+                                src="./images/banners/3.jpg" alt=".."> <h3>البنات</h3></a></div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="900"><a href="#"><img
+                                src="./images/banners/4.jpg" alt=".."> <h3>الالعاب</h3></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <section id="recent">
+        <div class="container">
+            <div class="c2">
+                <div class="recent-head s-head" data-aos="fade-left">
+                    <h3>
+                        وصل حديثًا
+                    </h3>
+                </div>
+                <div class="recent-body row" data-aos="zoom-in">
+                    <div class="recent-swiper-container s-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/1.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/2.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/3.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/4.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="best-seller">
+        <div class="container">
+            <div class="c2">
+                <div class="best-seller-head s-head" data-aos="fade-left">
+                    <h3>
+                        الأكثر مبيعًا
+                    </h3>
+                </div>
+                <div class="best-seller-body row" data-aos="zoom-in">
+                    <div class="best-seller-swiper-container s-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/1.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/2.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/3.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/4.jpg" alt="product">
+                                        <div class="see"><span class="lnr lnr-eye"></span></div>
+                                        <div class="sale">خصم 12%</div>
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبي</a></h5>
+
+                                    <div class="color showHover">
+                                        <div class="c1"></div>
+                                        <div class="c2"></div>
+                                        <div class="c3"></div>
+                                        <div class="c4"></div>
+                                    </div>
+
+                                    <div class="size showHover">
+                                        <div class="s1">22</div>
+                                        <div class="s2">24</div>
+                                        <div class="s3">26</div>
+                                        <div class="s4">28</div>
+                                        <div class="s5">30</div>
+                                    </div>
+
+                                    <div class="price flex-center">
+                                        <div class="price-sale"><span>790</span> <span>ريال</span> </div>
+                                        <span>690</span> <span>ريال</span>
+                                    </div>
+
+                                    <div class="buy showHover">
+                                        <div class="cart"> <span class="lnr lnr-cart"></span> اضف إلى السلة</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                                                
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="banner2">
+        <div class="container">
+            <div class="c2">
+                <div class="banner-content" data-aos="flip-up">
+                    <div class="banner"><a href="#"><img src="./images/banners/banner.jpg" alt="banner"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="notes">
+        <div class="container">
+            <div class="c2">
+                <div class="notes-content" data-aos="zoom-out">
+                    <div class="notes-swiper-container">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="note swiper-slide">
+                                <div class="note-icon"><span class="lnr lnr-star"></span></div>
+                                <div class="note-body">
+                                    <h3>ضمان جودة المنتجات
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="note swiper-slide">
+                                <div class="note-icon"><span class="lnr lnr-undo"></span></div>
+                                <div class="note-body">
+                                    <h3>الإستبدال خلال 14 يوم والإسترجاع خلال 3 يوم
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="note swiper-slide end">
+                                <div class="note-icon"><span class="lnr lnr-rocket"></span></div>
+                                <div class="note-body">
+                                    <h3>توصيل مجاني لأكثر من 250 ريال
+                                    </h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="c2">
+                <div class="footer-head">
+                    <h3>هُم روح الحياة</h3>
+                </div>
+                <div class="footer-top">
+                    <div class="info" data-aos="fade-left" data-aos-delay="0">
+                        <div class="head">
+                            <h4>معلومات</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">الشحن والتوصيل</a></li>
+                            <li><a href="#">الحسابات البنكية</a></li>
+                            <li><a href="#">الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                    <div class="adds" data-aos="fade-left" data-aos-delay="300">
+                        <div class="head">
+                            <h4>اضافات</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">الماركات</a></li>
+                            <li><a href="#">قسائم الهدايا</a></li>
+                            <li><a href="#">نظام العمولة</a></li>
+                            <li><a href="#">العروض المميزة</a></li>
+                        </ul>
+                    </div>
+                    <div class="cust" data-aos="fade-left" data-aos-delay="600">
+                        <div class="head">
+                            <h4>خدمة العملاء</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">اتصل بنا</a></li>
+                            <li><a href="#">ارجاع الطلب</a></li>
+                            <li><a href="#">خريطة الموقع</a></li>
+                        </ul>
+                    </div>
+                    <div class="account" data-aos="fade-right" data-aos-delay="400">
+                        <div class="head">
+                            <h4>حسابى</h4>
+                        </div>
+                        <ul>
+                            <li><a href="#">حسابى</a></li>
+                            <li><a href="#">طلباتى</a></li>
+                            <li><a href="#">قائمة رغباتى</a></li>
+                            <li><a href="#">القائمة البريدية</a></li>
+                        </ul>
+                    </div>
+                    <div class="mail" data-aos="fade-right" data-aos-delay="0">
+                        <h4>اشترك في النشرة البريدية</h4>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="ادخل بريدك الإلكتروني">
+                                <a type="submit" role="button">
+                                    اشترك
+                                </a>
+                            </div>
+                        </form>
+                        <div class="social flex-center">
+                            <div class="social-icon wats">
+                                <a class="flex-center" href="#"> <i class="fab fa-whatsapp"></i></a>
+                            </div>
+                            <div class="social-icon facebook">
+                                <a class="flex-center" href="#"> <i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social-icon snap">
+                                <a class="flex-center" href="#"> <i class="fab fa-snapchat-ghost"></i></a>
+                            </div>
+                            <div class="social-icon insta">
+                                <a class="flex-center" href="#"> <i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="social-icon twitter">
+                                <a class="flex-center" href="#"> <i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="credit">
+                    <p> <span> &copy; جميع الحقوق محفوظة، متجر فيتا ستور 2020  </span></p>
+                    <img src="./images/icons/payment.png" alt="..">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="up" class="up flex-center" onclick="window.scroll({top: 0,behavior: 'smooth'});">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
