@@ -106,10 +106,6 @@
     margin-bottom: 45px;
     text-align: center;
 
-    @media (max-width: 576px) {
-        margin-bottom: 30px;
-    }
-
     h3 {
         font-size: 24px;
         margin: 0;
@@ -136,8 +132,10 @@
 
 .product {
     border: 1px solid rgb(234, 234, 234);
+    background-color: white;
     padding-bottom: 20px;
     transition: all 0.5s;
+    position: relative;
 
     .product-img {
         text-align: center;
@@ -162,6 +160,9 @@
             position: absolute;
             top: 30%;
             right: -32%;
+            font-family: TajawalBold;
+            color: #626262;
+            font-size: 15px;
 
             @media (max-width: 1200px) {
                 top: 31%;
@@ -198,6 +199,10 @@
             transition: all 1s;
             opacity: 0;
             cursor: pointer;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
     }
 
@@ -260,9 +265,8 @@
 
         .price {
             color: $color1;
-            font-weight: 700;
             font-size: 16px;
-            font-family: TajawalBold;
+            font-family: TajawalMedium;
             justify-content: center;
             margin-bottom: 15px;
 
@@ -292,7 +296,7 @@
                 outline: none;
                 font-size: 14px;
                 cursor: pointer;
-                background-color: rgb(176, 198, 194);
+                background-color: #79a9a2;
                 width: 209px;
                 height: 32px;
                 border-radius: 25px;
@@ -318,21 +322,28 @@
             visibility: hidden;
             opacity: 0;
             transition: opacity 0.7s, margin 0.5s;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
     }
 
     &:hover {
-        border: 1px solid rgb(234, 234, 234);
-        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
-        transform: scale(1.005);
-        .showHover {
-            height: auto;
-            margin-bottom: 15px;
-            visibility: visible;
-            opacity: 1;
-        }
-        .see {
-            opacity: 1;
+        @media (min-width: 992px) {
+            border: 1px solid rgb(234, 234, 234);
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+            transform: scale(1.005);
+            z-index: 5;
+            .showHover {
+                height: auto;
+                margin-bottom: 15px;
+                visibility: visible;
+                opacity: 1;
+            }
+            .see {
+                opacity: 1;
+            }
         }
     }
 }
@@ -448,7 +459,7 @@ nav {
         background-color: white;
 
         @media (max-width: 1200px) {
-            padding: 20px 0;
+            padding: 12px 0;
         }
 
         .c2 {
@@ -485,7 +496,7 @@ nav {
             }
             @media (max-width: 768px) {
                 img {
-                    max-width: 85%;
+                    max-width: 65%;
                 }
             }
         }
@@ -534,9 +545,15 @@ nav {
                     align-items: center;
                     border-radius: 100%;
                     background-color: $color2;
+                    
 
                     &:hover {
-                        color: white;
+                        background-color: $color1;
+                        color: $color2;
+                    }
+
+                    &:focus{
+                        border:1px solid $color2;
                     }
                 }
             }
@@ -651,7 +668,7 @@ nav {
                 font-weight: 500;
 
                 & > li {
-                    margin: 0 10px;
+                    margin: 0 12px;
 
                     & > a {
                         color: $color1;
@@ -797,8 +814,8 @@ nav {
                         }
                     }
 
-                    .slide{
-                        .drop{
+                    .slide {
+                        .drop {
                             &:hover {
                                 color: $color2;
                             }
@@ -812,7 +829,7 @@ nav {
                             }
 
                             &:hover {
-                                color:$color2;
+                                color: $color2;
                             }
                         }
                     }
@@ -887,7 +904,7 @@ nav {
 .up {
     height: 50px;
     width: 50px;
-    background-color: #7ec6c9db;
+    background-color: #77aaa1bf;
     right: 20px;
     bottom: 30px;
     color: white;
@@ -1150,6 +1167,13 @@ header {
 
 #banners {
     margin-top: 40px;
+    margin-bottom: 75px;
+
+    @media(max-width:576px){
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
     .container {
         position: relative;
         padding: 0;
@@ -1190,13 +1214,13 @@ header {
             text-align: center;
 
             @media (max-width: 1200px) {
-                width: 50%;
+                width: 48%;
             }
-            @media (max-width: 576px) {
-                width: 100%;
-                margin: 0 auto;
-                margin-top: 15px;
-            }
+            // @media (max-width: 576px) {
+            //     width: 100%;
+            //     margin: 0 auto;
+            //     margin-top: 15px;
+            // }
 
             img {
                 width: 100%;
@@ -1244,7 +1268,9 @@ header {
 }
 
 #recent {
-    margin-top: 70px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 3;
     .container {
         position: relative;
         padding: 0;
@@ -1273,16 +1299,14 @@ header {
     }
 
     .recent-body {
-        height: 500px;
-
-        @media(max-width: 1200px){
-            height:530px;
-        }
+        min-height: 510px;
     }
 }
 
 #best-seller {
-    margin-top: -25px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
     .container {
         position: relative;
         padding: 0;
@@ -1311,16 +1335,18 @@ header {
     }
 
     .best-seller-body {
-        height: 500px;
-
-        @media(max-width: 1200px){
-            height:530px;
-        }
+        min-height: 510px;
     }
 }
 
 #banner2 {
     margin-top: 0px;
+    position: relative;
+    z-index: 1;
+
+    @media(max-width:576px){
+        margin-top:-25px;
+    }
     .container {
         position: relative;
         padding: 0;
@@ -1651,7 +1677,8 @@ footer {
                     align-items: center;
 
                     &:hover {
-                        color: $color2;
+                        background-color: $color2;
+                        color: $color1;
                     }
                 }
 
